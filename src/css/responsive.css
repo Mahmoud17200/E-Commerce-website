@@ -1,0 +1,226 @@
+/* responsive css */
+/* (1024) large width*/
+@media (max-width: 1024px) {
+  .lowerNav .navbar-nav {
+    flex-grow: 0.01;
+    position: relative;
+    left: -90px;
+    display: contents;
+  }
+  .lowerNav .navbar-nav .nav-item {
+    margin: 0 7px;
+  }
+  /*start collection list */
+  .collectionList .lg1024 {
+    display: block;
+  }
+  .collectionList .md768 {
+    display: none;
+  }
+  .collectionList .sm360 {
+    display: none;
+  }
+  /*end collection list */
+  .lg1024 {
+    display: block;
+  }
+  .md768 {
+    display: none;
+  }
+  .sm360 {
+    display: none;
+  }
+}
+/* (768) large width */
+@media (max-width: 768px) {
+  .upperNavbar {
+    padding: 16px 0;
+  }
+  .upperNavbar .menu {
+    order: 2;
+    display: block;
+  }
+    .upperNavbar .logo {
+    order: 1;
+  }
+  .upperNavbar .text {
+    display: none;
+  }
+  .upperNavbar .menu img {
+    width: 28px;
+  }
+  .upperNavbar .control .search-box {
+    display: none;
+  }
+
+  .lowerNav {
+    display: none;
+  }
+  .upperNavbar .dropDown-menu {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0px 3px 8px rgb(212, 212, 212);
+    /* border-bottom: 3px solid #000; */
+  }
+  .upperNavbar .dropDown-menu .close-icon img {
+    width: 18px;
+  }
+  .upperNavbar .dropDown-menu.active {
+    left: 0;
+  }
+
+  .upperNavbar .dropDown-menu .menu-buttons .btn {
+    margin: 0 5px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: 1px solid #9a9a9a;
+    color: #9a9a9a;
+  }
+  .upperNavbar .dropDown-menu .menu-buttons .btn.active {
+    background-color: #1449d0;
+    color: #fff;
+  }
+  .upperNavbar .dropDown-menu .menu-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .upperNavbar .dropDown-menu .menu-links li {
+    padding: 15px 0;
+    border-bottom: 1px solid #7a7a7a23;
+  }
+  .upperNavbar .dropDown-menu .menu-links li:nth-last-child(1) {
+    border: none;
+  }
+  .upperNavbar .dropDown-menu .menu-links li .link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .upperNavbar .dropDown-menu .menu-links li .link img {
+    width: 12px;
+  }
+
+  .sup-menu {
+    color: #000;
+    padding: 10px 0;
+    transition: 0.4s all ease;
+    background-color: #9a9a9a;
+    display: none;
+    opacity: 0;
+  }
+  .sup-menu.active {
+    height: 100px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .upperNavbar .menu-navbar {
+    padding: 20px 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* start two banners  */
+  .two-banners .banner {
+    height: 250px;
+  }
+  /*start collection list */
+  .collectionList .lg1024 {
+    display: none;
+  }
+  .collectionList .md768 {
+    display: block;
+  }
+  .collectionList .sm360 {
+    display: none;
+  }
+  .collectionList .section-title {
+    margin-bottom: 5px;
+  }
+  /*end collection list */
+  .lg1024 {
+    display: none;
+  }
+  .md768 {
+    display: block;
+  }
+  .sm360 {
+    display: none;
+  }
+}
+/* (360) large width */
+@media (max-width: 360px) {
+  /* stander code */
+  .upperNavbar .logo {
+    order: 1;
+  }
+  .upperNavbar .menu {
+    order: 2;
+  }
+  .upperNavbar .text {
+    display: none;
+  }
+  .upperNavbar .control .logo img {
+    width: 110px;
+  }
+  .upperNavbar .nav-icons li:nth-child(1) {
+    display: none;
+  }
+  .upperNavbar .nav-icons li:nth-child(2) {
+    display: none;
+  }
+  .upperNavbar .control .nav-icons ul li img {
+    width: 25px;
+  }
+  .upperNavbar .dropDown-menu {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+  }
+
+  /* start two banners  */
+  .two-banners .banner {
+    height: 200px;
+    margin: 10px 0;
+  }
+  /* end two banners */
+  /*start collection list */
+  .collectionList .lg1024 {
+    display: none;
+  }
+  .collectionList .md768 {
+    display: none;
+  }
+  .collectionList .sm360 {
+    display: block;
+  }
+
+  .lg1024 {
+    display: none;
+  }
+  .md768 {
+    display: none;
+  }
+  .sm360 {
+    display: block;
+  }
+}

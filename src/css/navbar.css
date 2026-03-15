@@ -1,0 +1,229 @@
+.all-navbars {
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.upperNavbar {
+  padding: 20px 0;
+  z-index: 50;
+  background-color: #fff;
+}
+.upperNavbar .control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.upperNavbar .menu {
+  display: none;
+}
+.upperNavbar .control .logo img {
+  width: 135px;
+}
+.upperNavbar .control .search-box {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative;
+}
+.upperNavbar .control .search-box select {
+  border: 1px solid #00000056;
+  height: 42px;
+  text-transform: capitalize;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.upperNavbar .control .search-box select:focus {
+  border-radius: 3px;
+  border: 2px solid #222222;
+}
+.upperNavbar .control .search-box input {
+  padding-left: 25px;
+  height: 42px;
+  width: 50%;
+  border: 1px solid #00000056;
+  text-transform: capitalize;
+}
+.upperNavbar .control .search-box input::placeholder {
+  font-size: 15px;
+}
+.upperNavbar .control .search-box input:focus {
+  border-radius: 3px;
+  border: 2px solid #222222;
+}
+.upperNavbar .control .search-box .search-icon-control {
+  height: 42px;
+  padding: 0 10px;
+  position: absolute;
+  background-color: #08009f;
+  color: #fff;
+  position: relative;
+  right: 20px;
+}
+.upperNavbar .control .search-box .search-icon {
+  width: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.upperNavbar .text {
+  font-size: 14px;
+  font-weight: 300;
+}
+.upperNavbar .text img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.bottom-border {
+  width: 100%;
+  height: 1.5px;
+  background-color: #7a7a7a23;
+  display: block;
+  z-index: 1;
+}
+/* end upper nav */
+/* start lower nav */
+.lowerNav {
+  padding: 20px 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1000;
+}
+.lowerNav.active {
+  padding: 28px 0;
+  background-color: #fff;
+  transition: 0.5s ease;
+  position: fixed;
+  top: -70px;
+  left: 0;
+  right: 0;
+  transform: translateY(70px);
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 1px 20px 1px #91919154;
+}
+.lowerNav .control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0;
+}
+.lowerNav .Categories {
+  position: relative;
+}
+.lowerNav .Categories h5 {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.lowerNav .Categories h5 img {
+  width: 25px;
+  margin-right: 8px;
+}
+.lowerNav .control .column-border {
+  width: 0.6px;
+  height: 25px;
+  background-color: #7a7a7a43;
+  margin-right: 20px;
+}
+.lowerNav .navbar-nav {
+  flex-grow: 0.01;
+  position: relative;
+  left: -180px;
+}
+.lowerNav .nav-icons ul li img {
+  cursor: pointer;
+}
+.lowerNav .navbar-nav .nav-item {
+  margin: 0 16px;
+  position: relative;
+  font-size: 18px;
+}
+.lowerNav .navbar-nav .link {
+  text-decoration: none;
+}
+.lowerNav .navbar-nav .link img {
+  width: 12px;
+  margin-left: 4px;
+}
+
+.lowerNav .control .nav-icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lowerNav .control .nav-icons ul li img {
+  width: 20px;
+}
+.lowerNav .control .nav-icons ul li {
+  margin: 0 8px;
+}
+
+.lowerNav .navbar-nav .cat-menu {
+  position: absolute;
+  top: 55px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.lowerNav .navbar-nav .nav-item .cat-menu ul {
+  display: flex;
+}
+.lowerNav .navbar-nav .nav-item .cat-menu ul li .card {
+  padding: 10px;
+}
+
+.drop-menu {
+  position: absolute;
+  background-color: #fff;
+  top: 90px;
+  padding: 0 15px;
+  width: 250px;
+  transition: all 0.5s ease;
+}
+
+.lowerNav .Categories .category-menu {
+  position: absolute;
+  background-color: #fff;
+  top: 90px;
+  padding: 0 15px;
+  display: none;
+  width: 250px;
+  transition: all 0.5s ease;
+}
+
+.lowerNav .Categories .category-menu.active {
+  top: 60px;
+  display: block;
+}
+
+.lowerNav .Categories .category-menu ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.lowerNav .Categories .category-menu ul li .cat {
+  font-size: 15px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.lowerNav .Categories .category-menu ul li .cat .cat-name {
+  cursor: pointer;
+  flex-grow: 1;
+}
+.lowerNav .Categories .category-menu ul li .cat img {
+  width: 18px;
+}
+.lowerNav .Categories .category-menu ul li .cat img:nth-child(1) {
+  margin-right: 8px;
+}

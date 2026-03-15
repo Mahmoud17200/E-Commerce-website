@@ -1,0 +1,4 @@
+1:buy it now page 
+2:wishlist page
+3:save products when click add to cart in store
+4:when click om cart icon the sidebar open 

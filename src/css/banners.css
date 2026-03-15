@@ -1,0 +1,215 @@
+/* start Banners */
+.banners {
+  margin: 20px 0;
+  height: auto;
+  padding: 20px 0;
+}
+.banners .left-banner {
+  position: relative;
+  margin-right: 10px;
+  height: 400px;
+}
+.banners .right-banner {
+  min-height: 400px;
+  gap: 10px;
+  width: 100%;
+}
+.banners .left-banner img {
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  inset: 0;
+  width: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+.banners .left-banner .box {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+.banners .left-banner .box:nth-child(1) {
+  background-image: url("/img/sec1-1.jpg");
+}
+.banners .left-banner .box > * {
+  margin-left: 20px;
+}
+.banners .left-banner .box h1 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.banners .left-banner .box p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #b1b1b1;
+  width: 85%;
+}
+.banners .left-banner .box .btn {
+  border: none;
+  padding: 7px 20px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  width: fit-content;
+}
+.banners .left-banner .box .btn:hover {
+  color: #fff;
+  background-color: #3b3b3b;
+}
+.banners .right-banner .upper-banner,
+.banners .right-banner .bottom-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+.banners .right-banner .upper-banner img,
+.banners .right-banner .bottom-banner img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.banners .right-banner .upper-banner .box,
+.banners .right-banner .bottom-banner .box {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.banners .right-banner .box h1 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.banners .right-banner .box p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #fff;
+  width: 85%;
+  text-transform: uppercase;
+}
+.banners .right-banner .box .link {
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: #b1b1b1;
+  text-transform: capitalize;
+}
+/* end Banners */
+
+/* responsive css */
+/* (1024) large width*/
+@media (max-width: 1024px) {
+}
+/* (768) large width */
+@media (max-width: 768px) {
+  .banners {
+    /* flex-direction: column; */
+  }
+
+  .col-sm-12 > .left-banner {
+    margin-bottom: 50px; /* هيتطبق من بره العنصر */
+    width: 100%;
+    position: relative;
+    margin-right: 0px;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* upper-banner */
+  .col-12 > .upper-banner {
+    margin-bottom: 20px; /* نفس الفكرة */
+  }
+
+  .banners .left-banner {
+  }
+
+  .banners .left-banner .box {
+    padding: 30px 0;
+    /* width: 100%; */
+  }
+  .banners .left-banner .box h1 {
+    font-size: 20px;
+  }
+  .banners .left-banner .box p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #b1b1b1;
+    width: 80%;
+  }
+
+  .banners .left-banner .box .btn {
+    padding: 4px 16px;
+    font-size: 12px;
+  }
+
+  .banners .right-banner {
+    /* height: 100%;
+    width: 100%;
+    gap: 0px; */
+    display: none;
+  }
+  /* .banners .right-banner .upper-banner {
+    height: 100%;
+    position: relative;
+  }
+
+  .banners .right-banner .bottom-banner {
+    height: 100%;
+    position: relative;
+  } */
+}
+/* (360) large width */
+@media (max-width: 360px) {
+  /* banners */
+  .banners .left-banner .box {
+    padding: 30px 0;
+  }
+
+  .banners .left-banner .box h1 {
+    font-size: 20px;
+  }
+  .banners .left-banner .box p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #b1b1b1;
+    width: 60%;
+  }
+
+  .banners .left-banner .box .btn {
+    padding: 4px 16px;
+    font-size: 14px;
+  }
+
+  .banners .right-banner .box h1 {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .banners .right-banner .box p {
+    margin-bottom: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .banners .right-banner .box .link {
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #b1b1b1;
+    font-size: 14px;
+  }
+  .banners .right-banner .upper-banner {
+    height: 180px;
+    position: relative;
+  }
+  .banners .right-banner .bottom-banner {
+    height: 180px;
+    display: none;
+    position: relative;
+  }
+}

@@ -1,0 +1,21 @@
+.collectionList {
+  margin: 50px 0;
+}
+.collectionList .md768,
+.collectionList .sm360 {
+  display: block;
+  display: none;
+}
+.collectionList .item {
+  text-align: center;
+}
+.collectionList .item .content img {
+  border-radius: 50%;
+  width: 80%;
+}
+.collectionList .item .content h6 {
+  text-transform: capitalize;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+}

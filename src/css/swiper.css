@@ -1,0 +1,22 @@
+.swiperSlide {
+  padding-top: 6px;
+}
+.swiper-nav-btns {
+  text-align: center;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-nav-btns button {
+  padding: 5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #313131;
+  border: none;
+  margin: 0 5px;
+}
+.swiper-nav-btns img {
+  width: 85%;
+}

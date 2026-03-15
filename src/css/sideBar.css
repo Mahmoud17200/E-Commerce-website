@@ -1,0 +1,308 @@
+.sideBar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 30%;
+  z-index: 10000;
+  transition: 0.3s ease-in-out all;
+  opacity: 1;
+  background-color: #fff;
+}
+.sideBar .empty-cart-message {
+  position: absolute;
+  /* top:50%; */
+  text-align: center;
+}
+.sideBar.active {
+  box-shadow: -0.5px 0px 15px 0.5px #00000061;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  bottom: 0;
+  padding: 10px 35px;
+}
+
+.sideBar .upperNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 30px 0;
+}
+.upperNav svg {
+  width: 30px;
+  cursor: Pointer;
+}
+.sideBar .sideBar-control {
+  height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+}
+.sideBar .sideBar-control::-webkit-scrollbar {
+  width: 4px;
+}
+.sideBar .sideBar-control::-webkit-scrollbar-thumb {
+  background-color: #616b7d;
+  border-radius: 20px;
+}
+.sideBar .sideBar-control::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sideBar .sideBar-control .row .selectedProduct {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+}
+.sideBar .sideBar-control .row .selectedProduct .img-body {
+  margin-right: 10px;
+}
+
+.sideBar .sideBar-control .row .selectedProduct .img-body img {
+  /* max-width: 100px; */
+  width: 80px;
+}
+
+.sideBar .sideBar-control .row .selectedProduct .details-body {
+  margin-left: 10px;
+}
+
+.sideBar .sideBar-control .row .selectedProduct .details-body h4 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.sideBar .sideBar-control .row .selectedProduct .details-body h5 {
+  font-size: 16px;
+  font-weight: 500;
+  /* margin-bottom: 5px; */
+}
+.sideBar .sideBar-control .row .selectedProduct .details-body span {
+  cursor: pointer;
+}
+.sideBar .sideBar-control .row .selectedProduct .details-body .remove-btn {
+  text-decoration: underline;
+}
+.sideBar .sideBar-footer {
+  border-top: 1px solid #0000002f;
+  width: 100%;
+  padding-top: 15px;
+}
+.sideBar .sideBar-footer .total {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sideBar .sideBar-footer .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+.sideBar .sideBar-footer .buttons .link {
+  width: 100%;
+  margin: 5px;
+}
+.sideBar .sideBar-footer .buttons button {
+  width: 100%;
+  padding: 10px 0;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.sideBar .sideBar-footer .buttons button:nth-child(1) {
+  margin-right: 5px;
+}
+.sideBar .sideBar-footer .buttons button:nth-child(2) {
+  margin-left: 5px;
+}
+
+.free-shipping-bar {
+  padding: 20px 0;
+}
+
+.progress-container {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #fb4b4b;
+  transition: width 0.4s ease;
+}
+.sideBar .items-control {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.sideBar .items-control button {
+  padding: 0px 8px;
+  background-color: none;
+  font-size: 18px;
+  color: #222;
+  height: 18px;
+  line-height: 100%;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.sideBar .items-control button:hover {
+  background-color: #dfdfdf;
+}
+.sideBar .items-control p {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.sideBar .price-quantity.item-price {
+  margin: none;
+}
+
+/* responsive css */
+/* (1024) large width*/
+@media (max-width: 1024px) {
+.sideBar.active {
+    width: 50%;
+  }
+  .sideBar .upperNav {
+    margin: 0 0 15px 0;
+    padding-top: 10px;
+  }
+   .free-shipping-bar {
+    padding: 10px 0;
+    text-align: center;
+  }
+   .sideBar .upperNav .closeBtn {
+    width: 20px;
+  }
+    .sideBar .sideBar-control .row .selectedProduct .img-body img {
+    width: 80px;
+  }
+  .sideBar .sideBar-control .row .selectedProduct .details-body h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+    .sideBar .sideBar-control .row .selectedProduct .details-body h5 {
+    font-size: 13px;
+  }
+  .sideBar .items-control p {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.sideBar .sideBar-footer .buttons button {
+    padding: 8px 0px;
+    font-size: 15px;
+  }
+}
+/* (768) large width */
+@media (max-width: 768px) {
+  .sideBar.active {
+    width: 50%;
+  }
+  .sideBar .upperNav {
+    margin: 0 0 15px 0;
+    padding-top: 10px;
+  }
+   .free-shipping-bar {
+    padding: 10px 0;
+    text-align: center;
+  }
+   .sideBar .upperNav .closeBtn {
+    width: 20px;
+  }
+    .sideBar .sideBar-control .row .selectedProduct .img-body img {
+    width: 80px;
+  }
+  .sideBar .sideBar-control .row .selectedProduct .details-body h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+    .sideBar .sideBar-control .row .selectedProduct .details-body h5 {
+    font-size: 13px;
+  }
+  .sideBar .items-control p {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.sideBar .sideBar-footer .buttons button {
+    padding: 6px 0px;
+    font-size: 14px;
+  }
+}
+/* (360) large width */
+@media (max-width: 360px) {
+  .sideBar.active {
+    width: 100%;
+  }
+  .sideBar .sideBar-control {
+    height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+  }
+  .sideBar .upperNav {
+    margin: 10px 0;
+  }
+  .sideBar .upperNav h5 {
+    font-size: 14px;
+  }
+  .sideBar .upperNav .closeBtn {
+    width: 20px;
+  }
+  .free-shipping-bar {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .free-shipping-bar p {
+    font-size: 12px;
+  }
+  .sideBar .sideBar-control .row .selectedProduct {
+    padding: 10px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sideBar .sideBar-control .row .selectedProduct .img-body img {
+    width: 80px;
+  }
+  .sideBar .sideBar-control .row .selectedProduct .details-body {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .sideBar .sideBar-control .row .selectedProduct .details-body h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .sideBar .sideBar-control .row .selectedProduct .details-body h5 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .sideBar .items-control p {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+  .sideBar .sideBar-footer .buttons {
+    flex-direction: column;
+  }
+  .sideBar .sideBar-footer .buttons .link {
+    background-color: #fb4b4b;
+    width: 100%;
+    margin: 5px;
+  }
+  .sideBar .sideBar-footer .buttons button {
+    padding: 6px 0px;
+    font-size: 14px;
+  }
+}
