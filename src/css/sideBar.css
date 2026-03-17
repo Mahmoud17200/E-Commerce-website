@@ -171,7 +171,7 @@
 /* (1024) large width*/
 @media (max-width: 1024px) {
 .sideBar.active {
-    width: 50%;
+    width: 40%;
   }
   .sideBar .upperNav {
     margin: 0 0 15px 0;
@@ -204,10 +204,16 @@
     font-size: 15px;
   }
 }
+/* small laptop */
+@media (min-width: 992px) {
+  .sideBar.active {
+    width: 50%;
+  }
+}
 /* (768) large width */
 @media (max-width: 768px) {
   .sideBar.active {
-    width: 50%;
+    width: 80%;
   }
   .sideBar .upperNav {
     margin: 0 0 15px 0;

@@ -82,48 +82,6 @@ table .total-price h6 {
   font-weight: 700;
 }
 
-/* responsive */
-
-@media (max-width: 768px) {
-  /* .cart-img {
-    width: 80px;
-  } */
-
-  table thead th {
-    font-size: 13px;
-  }
-
-  table tbody td h5 {
-    font-size: 13px;
-  }
-
-  table tbody td h6 {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 360px) {
-  table .cart-img {
-    width: 100px;
-  }
-
-  table thead th {
-    font-size: 11px;
-  }
-
-  table tbody td h5 {
-    font-size: 11px;
-  }
-
-  table tbody td h6 {
-    font-size: 10px;
-  }
-
-  table .items-control p {
-    font-size: 12px;
-  }
-}
-
 .sub-total-sec {
   max-width: 40%;
   background-color: rgba(78, 128, 255, 0.076);
@@ -159,33 +117,109 @@ table .total-price h6 {
 }
 /* responsive css */
 /* (1024) large width*/
+
+/* 1024 (small laptob) */
 @media (max-width: 1024px) {
   .sub-total-sec {
-    min-width: 60%;
+    max-width: 60%;
   }
+  table tbody img {
+    max-width: 100px;
+  }
+
 }
-/* (768) large width */
+
+/* =========================
+   768px (Tablet)
+========================= */
 @media (max-width: 768px) {
-  .sub-total-sec {
-    min-width: 60%;
+  table thead th {
+    font-size: 13px;
   }
-}
-/* (360) large width */
-@media (max-width: 360px) {
-  table .tbody img {
-    width: 100px;
-  }
+
   table tbody td h5 {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   table tbody td h6 {
-    font-size: 10px;
-  }
-  .sub-total-sec {
-    min-width: 90%;
-  }
-  .clearBtn{
     font-size: 12px;
   }
+  .sub-total-sec {
+    max-width: 70%;
+  }
 }
+
+/* =========================
+   576px (Large mobile)
+========================= */
+@media (max-width: 576px) {
+  table thead {
+    display: none; /* نخفي الهيدر */
+  }
+
+  table,
+  table tbody,
+  table tr,
+  table td {
+    display: block;
+    width: 100%;
+  }
+
+  table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  table tbody img {
+    max-width: 85px;
+  }
+
+  .items-control {
+    justify-content: flex-end;
+  }
+
+  .sub-total-sec {
+    max-width: 85%;
+  }
+}
+
+/* =========================
+   360px (Small mobile)
+========================= */
+@media (max-width: 360px) {
+  table tbody img {
+    max-width: 60px;
+  }
+
+  table td h5 {
+    font-size: 11px;
+  }
+
+  table td h6 {
+    font-size: 10px;
+  }
+
+  table .items-control p {
+    font-size: 12px;
+  }
+
+  .sub-total-sec {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .clearBtn {
+    font-size: 12px;
+    width: 100%;
+  }
+
+}
+

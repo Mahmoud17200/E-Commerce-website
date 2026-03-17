@@ -1,4 +1,20 @@
-1:buy it now page 
-2:wishlist page
-3:save products when click add to cart in store
-4:when click om cart icon the sidebar open 
+1:create products page
+2:responsive the pages
+
+
+responsive the web for this screens:
+
+/* mobile */
+@media (min-width: 376px) {}
+
+/* large mobile */
+@media (min-width: 576px) {}
+
+/* tablet */
+@media (min-width: 768px) {}
+
+/* small laptop */
+@media (min-width: 992px) {}
+
+/* desktop */
+@media (min-width: 1200px) {}

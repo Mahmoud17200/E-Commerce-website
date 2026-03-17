@@ -1,7 +1,12 @@
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { openSideBar } from "../rtk/slices/cart-slice";
+
 
 export default function UpperNavbar() {
+    const dispatch = useDispatch();
+
   let dropDownMenu = useRef();
   let toggleMenu = () => {
     dropDownMenu.current.style.left = "0";
@@ -100,6 +105,10 @@ export default function UpperNavbar() {
               <img className="search-icon" src="/svg icons/search.svg" />
             </div>
           </div>
+
+          <span className="cart-nav" onClick={() => dispatch(openSideBar())}>
+            <img src="/svg icons/cart2.svg" />
+          </span>
 
           <p className="text">
             <img src="/svg icons/svgexport-25.svg" /> UP TO 60% off All Items

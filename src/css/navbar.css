@@ -68,6 +68,11 @@
   justify-content: flex-end;
 }
 
+.upperNavbar .control .cart-nav{
+  display: none;
+}
+
+
 .upperNavbar .text {
   font-size: 14px;
   font-weight: 300;

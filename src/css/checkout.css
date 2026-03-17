@@ -177,7 +177,7 @@
     padding: 25px 0 25px 0px;
   }
    .check-out-page .right-side .products {
-    height: 65vh;
+    height: 35vh;
   }
 }
 /* (768) large width */
@@ -199,7 +199,7 @@
     padding: 25px 0 25px 0px;
   }
   .check-out-page .right-side .products {
-    min-height: 65vh;
+    min-height: 35vh;
   }
 }
 /* (360) large width */
@@ -229,6 +229,6 @@
     padding-left: 5px;
   }
   .check-out-page .right-side .products {
-    min-height: 65vh;
+    min-height: 25vh;
   }
 }

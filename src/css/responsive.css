@@ -37,11 +37,15 @@
     padding: 16px 0;
   }
   .upperNavbar .menu {
-    order: 2;
+    order: 1;
     display: block;
   }
     .upperNavbar .logo {
-    order: 1;
+    order: 2;
+  }
+  .upperNavbar .control .cart-nav {
+    order: 3;
+    display: block;
   }
   .upperNavbar .text {
     display: none;
@@ -166,10 +170,13 @@
 @media (max-width: 360px) {
   /* stander code */
   .upperNavbar .logo {
-    order: 1;
+    order: 2;
   }
   .upperNavbar .menu {
-    order: 2;
+    order: 1;
+  }
+  .upperNavbar .cart-nav {
+    order: 3;
   }
   .upperNavbar .text {
     display: none;
